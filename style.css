@@ -9,12 +9,14 @@
 html{
     margin: 0;
     padding: 0;
-    color: var(--white);
+    color: var(--white) !important;
+    overflow-x: hidden;
 }
 
 body {
     background-color: var(--black);
     font-family: 'Poppins', sans-serif;
+
 }
 
 .sectionHeader{
@@ -155,3 +157,28 @@ body {
 .FAQ-S{
     text-align: center;
 }
+/*SPEAKER*/
+.speakerCard{
+    padding: 20px;
+    width: fit-content;
+
+
+}
+.speakerCard .speakerImg
+{
+    border-radius: 20px;
+}
+.speakerCards{
+    text-align: center;
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 420px) 
+{
+    .speakerCards{
+        flex-direction: column;
+        
+    }
+  }
