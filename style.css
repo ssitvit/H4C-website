@@ -105,3 +105,53 @@ body {
         margin: auto;
     }
   }
+  /*FAQ SECTION CSS*/
+#top{
+    text-align: center !important;
+    color: azure;
+    padding-top: 3rem;
+    font-weight: normal;
+}
+.main-portion{
+    padding-top: 0.5rem;
+  
+}
+.btn-primary{
+    background-color:#A8AAAA !important;
+    border-color:#A8AAAA;
+    padding-left: 0.5rem;
+    padding-right: 15rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 30rem;
+    margin-right: 30rem;
+}
+.card{
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+.card-body{
+    background-color: bisque;
+    color: aqua;
+}
+.btn{
+    border-radius: .5rem;
+    color: black;
+    width: 48%;
+    font-size: 1.5rem;
+    
+}
+.main{
+    padding-top: 3rem;
+}
+.btn-primary{
+    margin-right: 0px;
+    margin-left: 24.5rem;
+    text-align: left;
+}
+.last{
+    padding-bottom: 4rem;
+}
+.FAQ-S{
+    text-align: center;
+}
