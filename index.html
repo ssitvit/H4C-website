@@ -60,6 +60,21 @@
             </div>
         </div>
     </section>
-
+    <script> 
+        var deadline = new Date("Mar 11, 2020 21:00:00").getTime(); 
+        var x = setInterval(function() { 
+        var now = new Date().getTime(); 
+        var t = deadline - now; 
+        var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+        var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+        var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+        var seconds = Math.floor((t % (1000 * 60)) / 1000);
+        document.getElementById("countdown").innerHTML = "<div class='time'>" + hours + "h " + minutes + "m " + seconds + "s " + "</div>"; 
+            if (t < 0) { 
+                clearInterval(x); 
+                document.getElementById("countdown").innerHTML = `<h2>The Hackathon has begun!!</h2>`
+            } 
+        }, 1000);
+    </script>
 </body>
 </html>
