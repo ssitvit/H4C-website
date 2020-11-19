@@ -106,7 +106,7 @@ body {
     }
   }
   /*FAQ SECTION CSS*/
-#top{
+/*#top{
     text-align: center !important;
     color: azure;
     padding-top: 3rem;
@@ -154,4 +154,58 @@ body {
 }
 .FAQ-S{
     text-align: center;
+}*/
+
+#faq-header {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: azure;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 4rem;
 }
+.accordion-section .panel-default > .panel-heading {
+    border: 0;
+    background: #A8AAAA;
+    padding: 0 ;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem !important;
+    margin-right: 10% !important;
+    margin-left: 10% !important;
+}
+.accordion-section .panel-default .panel-title a {
+    display: block;
+    
+    font-size: 1.5rem;
+}
+.accordion-section .panel-default .panel-title a:after {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-size: 3rem;
+    content: "\f106";
+    color: black;
+    float: right;
+    margin-top: -12px;
+}
+.accordion-section .panel-default .panel-title a.collapsed:after {
+    content: "\f107";
+}
+.accordion-section .panel-default .panel-body {
+    font-size: 1.2rem;
+}
+a{
+    color: black;
+}
+body{
+    color: white;
+}
+a:hover{
+    color: black;
+    text-decoration: italic;
+}
+/*.p-3.mb-3{
+    margin-right: 20%;
+    margin-right: 20%;
+}*/
+
