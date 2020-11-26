@@ -201,6 +201,43 @@ body {
   text-align: justify;
 }
 
+/* Hero sectoin */
+.jumbotron {
+  color: white;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.navbar-dark {
+  background-color: #000000 !important;
+  color: var(--white) !important;
+}
+
+.navbar-nav a {
+  background-color: var(--accentColor);
+  margin: 0 4% !important;
+  padding: 10px 40px !important;
+  border-radius: 50px;
+  font-weight: bold;
+  color: var(--white) !important;
+}
+
+/* .logo {
+  width: 20%;
+  height: auto;
+} */
+
+.H4CBox {
+  width: 20%;
+}
+
+#countdown {
+  text-align: center;
+  font-size: 1.8em;
+}
 /* Media Queries */
 @media (max-width: 420px) {
   .sectionHeader {
@@ -265,5 +302,19 @@ body {
 
   .speakerCards {
     flex-direction: column;
+  }
+
+  .navbar-nav a {
+    color: var(--accentColor) !important;
+    margin: 0 4% !important;
+    padding: 10px 40px !important;
+    border-radius: 0px;
+    font-weight: bold;
+    background-color: black;
+  }
+
+  .H4CText {
+    width: 80%;
+    margin-left: 10%;
   }
 }

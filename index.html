@@ -8,12 +8,54 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        $(".jumbotron").css({ height: $(window).height() + "px" });
+        $(window).on("resize", function() {
+        $(".jumbotron").css({ height: $(window).height() + "px" });
+        });
+    </script>
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <title>Hack4Cause 2021</title>
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="#" class="navbar-brand">
+                <img src="/assets/SSITLogo.png" class="logo" height="28" alt="SSIT Logo">
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ">
+                    <a href="#" class="nav-item nav-link">Home</a>
+                    <a href="#" class="nav-item nav-link">Tracks</a>
+                    <a href="#" class="nav-item nav-link">Speaker</a>
+                    <a href="#" class="nav-item nav-link">FAQ</a>
+                    <a href="#" class="nav-item nav-link">Sponsors</a>
+                    <a href="#" class="nav-item nav-link">Register</a>
+                </div>
+                <!-- <div class="navbar-nav ml-auto">
+                    <a href="#" class="nav-item nav-link">Login</a>
+                </div> -->
+            </div>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <div class="H4CLogos">
+              <img src="/assets/H4C Logo.png" alt="" class="H4CText">
+              <!-- <img src="/assets/H4C Box.png" alt="" class="H4CBox"> -->
+          </div>
+        </div>
+        <div class="timer">
+            <div id="countdown"></div>
+        </div>
+      </div>
     <!-- About Us Section -->
     <section class="section">
         <h1 class="sectionHeader">About Us</h1>
@@ -48,7 +90,7 @@
         <div class="perkCards">
             <div class="perkCard">
                 <i class="fas fa-users-cog"></i>
-                <h3 class="perkDesc">Free light saber!</h3>
+                <h3 class="perkDesc">Free dark saber!</h3>
             </div>
         </div>
     </section>
@@ -254,7 +296,7 @@
         <img src="./assets/sponsors.png" alt="" class="sponsors">
     </section>
     <script> 
-        var deadline = new Date("Mar 11, 2020 21:00:00").getTime(); 
+        var deadline = new Date("Mar 11, 2021 21:00:00").getTime(); 
         var x = setInterval(function() { 
         var now = new Date().getTime(); 
         var t = deadline - now; 
@@ -262,50 +304,12 @@
         var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
         var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
         var seconds = Math.floor((t % (1000 * 60)) / 1000);
-        document.getElementById("countdown").innerHTML = "<div class='time'>" + hours + "h " + minutes + "m " + seconds + "s " + "</div>"; 
+        document.getElementById("countdown").innerHTML = "<div class='time'> " + days + "d " + hours + "h " + minutes + "m " + seconds + "s " + "</div>"; 
             if (t < 0) { 
                 clearInterval(x); 
                 document.getElementById("countdown").innerHTML = `<h2>The Hackathon has begun!!</h2>`
             } 
         }, 1000);
     </script>
-        <!--ABOUT US PAGE
-    <div class="heading">
-        ABOUT HACK4CAUSE
-    </div>
-    <div class="paragraph">
-        <p>IEEE-SSIT would like to bring Hack4Cause, a 24 hour hackathon<br>
-            which aims to bring creativity and innovation<br>among<br>students Hack4Cause brings students
-             from different domains of<br>engineering together to build design and use the <br>
-             latest technology to hack into real world problems.The dates of the<br>
-             event are 10th and 11th of March.The main<br>motive behind Hack-4-Cause is to bring a change in 
-             the thinking<br>perspective of students in crtical industrial <br>situations </p>
-    </div>
-    <div class="perksheading">
-     PERKS
-    </div>
-    <div class="perkbuttons">
-        <div class="row">
-            <div class="column">
-                <button class="btn" size=70px id="a1"><i class="fas fa-rupee-sign"> Free Registration!</i></button>
-            </div>
-            <div class="column">
-            <button class="btn" size=70px id="a2"><i class="fas fa-dollar-sign">An online platform making <br>it accessable for all!</i></button>
-            </div>
-       </div>
-       <br>
-       <div class="row2">
-          <div class="column2">
-            <button class="btn" size=70px id="a3"><i class="fas fa-award"> Awesome Prices!</i></button>
-         </div>
-         <div class="column2">
-            <button class="btn" size=70px id="a4"><i class="far fa-laugh-beam">Great Oppurtunity!</i></button>
-         </div>
-      </div>
-       <br><br>
-            <button class="btn" size=70px id="a5"><i class="fab fa-angellist">Free Light Saber!</i></button>
-    
-    </div>
--->
 </body>
 </html>
