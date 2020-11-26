@@ -1,157 +1,320 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 
 :root {
-    --accentColor: #FF0748;
-    --black: #000000;
-    --white: #FFFFFF;
+  --accentColor: #ff0748;
+  --black: #000000;
+  --white: #ffffff;
 }
 
-html{
-    margin: 0;
-    padding: 0;
-    color: var(--white);
+html {
+  margin: 0;
+  padding: 0;
+  color: var(--white);
 }
 
 body {
-    background-color: var(--black);
-    font-family: 'Poppins', sans-serif;
+  background-color: var(--black);
+  font-family: "Poppins", sans-serif;
 }
 
-.sectionHeader{
-    color: var(--accentColor) !important;
-    font-size: 2.6em;
-    text-align: center;
-    text-transform: uppercase;
+.section {
+  margin: 60px 0;
 }
 
-.sectionSubheader{
-    text-align: center;
-    text-transform: uppercase;
+.sectionHeader {
+  margin: 20px 10px 10px 10px;
+  color: var(--accentColor) !important;
+  font-size: 2.6em;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.trackCards{
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    width: fit-content;
+.sectionSubheader {
+  color: var(--white) !important;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.indent{
-    margin-left: 18%;
+.trackCards {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: fit-content;
 }
 
-.trackCards .trackCard{
-    background-color: var(--white);
-    color: var(--black);
-    padding: 20px 20px;
-    width: 33%;
-    margin: 2%;
-    box-shadow: 8px 8px var(--accentColor);
-}
-.indent .trackCard{
-    width: 33%;
+.indent {
+  margin-left: 18%;
 }
 
-.trackCard .trackHeader{
-    text-transform: uppercase;
-    text-align: center;
+.trackCards .trackCard {
+  background-color: var(--white);
+  color: var(--black);
+  padding: 20px 20px;
+  width: 33%;
+  margin: 2%;
+  box-shadow: 8px 8px var(--accentColor);
+}
+.indent .trackCard {
+  width: 33%;
 }
 
-.trackCard .trackDesc{
-    color: var(--accentColor);
-    font-weight: 500;
-    padding: 0px 30px;
+.trackCard .trackHeader {
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.domainCards{
-    text-align: center;
-    margin: auto;
-    width: fit-content;
-    display: flex;
-    flex-direction: row;
+.trackCard .trackDesc {
+  color: var(--accentColor);
+  font-weight: 500;
+  padding: 0px 30px;
 }
 
-.domainCard{
-    border: 2px solid;
-    border-radius: 30px;
-    border-color: var(--accentColor);
-    padding: 30px 0px 20px 0px;
-    margin: 2%;
-    width: 300px;
+.domainCards {
+  text-align: center;
+  margin: auto;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
 }
 
-.domainCard i{
-    font-size: 4em;
+.domainCard {
+  border: 2px solid;
+  border-radius: 30px;
+  border-color: var(--accentColor);
+  padding: 30px 0px 20px 0px;
+  margin: 2%;
+  width: 300px;
 }
 
-.domainCard .domainName{
-    color: var(--accentColor);
-    font-size: 1.4em;
+.domainCard i {
+  font-size: 4em;
 }
 
+.domainCard .domainName {
+  color: var(--accentColor);
+  font-size: 1.4em;
+}
+
+/* FAQ Section */
+
+.FAQHead {
+  color: var(--black);
+  font-size: 1.4em;
+}
+
+.btn-link:hover {
+  text-decoration: none !important;
+  color: var(--accentColor);
+}
+
+.btn-link:active {
+  text-decoration: none !important;
+}
+
+.btn-link {
+  text-decoration: none !important;
+}
+
+.btn-wrap-text {
+  overflow: hidden;
+  white-space: normal;
+  display: inline-block;
+  text-overflow: ellipsis;
+}
+
+/* ABOUT US  */
+
+.aboutUsDesc {
+  color: var(--white);
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+
+/* Perks Section */
+.perkCards {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.perkCard {
+  background-color: var(--white);
+  margin: 0 100px;
+  padding: 20px 20px;
+  display: flex;
+  width: 20%;
+  flex-direction: row;
+  border-radius: 10px;
+}
+
+.perkDesc {
+  font-size: 1.8em;
+  margin-left: 4%;
+  margin: auto;
+}
+
+.perkCard i {
+  font-size: 4em;
+  padding: 20px;
+}
+
+/* sponsors section */
+
+.sponsors {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  margin-left: 25%;
+}
+
+/*SPEAKER*/
+.speakerCard {
+  padding: 20px;
+  width: fit-content;
+}
+.speakerCard .speakerImg {
+  width: 40%;
+  border-radius: 20px;
+}
+.speakerCards {
+  text-align: center;
+  margin: auto;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+
+.speakerHead {
+  color: var(--accentColor);
+  margin-top: 2%;
+}
+
+.speakerDesc {
+  color: var(--white);
+  margin-top: 2%;
+  width: 50%;
+  margin: auto;
+  text-align: justify;
+}
+
+/* Hero sectoin */
+.jumbotron {
+  color: white;
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.navbar-dark {
+  background-color: #000000 !important;
+  color: var(--white) !important;
+}
+
+.navbar-nav a {
+  background-color: var(--accentColor);
+  margin: 0 4% !important;
+  padding: 10px 40px !important;
+  border-radius: 50px;
+  font-weight: bold;
+  color: var(--white) !important;
+}
+
+/* .logo {
+  width: 20%;
+  height: auto;
+} */
+
+.H4CBox {
+  width: 20%;
+}
+
+#countdown {
+  text-align: center;
+  font-size: 1.8em;
+}
+/* Media Queries */
 @media (max-width: 420px) {
-    .domainCards{
-        flex-direction: column;
-    }
-
-    .trackCards{
-        flex-direction: column;
-        margin-left: 5.4%;
-        justify-content: space-around;
-    }
-
-    .trackCard{
-        width: 80% !important;
-        margin: auto;
-    }
+  .sectionHeader {
+    font-size: 2.2em;
+    margin: 0 40px 10px 40px !important;
   }
-  /*FAQ SECTION CSS*/
-#top{
-    text-align: center !important;
-    color: azure;
-    padding-top: 3rem;
-    font-weight: normal;
-}
-.main-portion{
-    padding-top: 0.5rem;
-  
-}
-.btn-primary{
-    background-color:#A8AAAA !important;
-    border-color:#A8AAAA;
-    padding-left: 0.5rem;
-    padding-right: 15rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-left: 30rem;
-    margin-right: 30rem;
-}
-.card{
-    margin-left: 10rem;
-    margin-right: 10rem;
+
+  .sectionSubheader {
+    font-size: 1.2em;
+    margin: 20px 20px;
   }
-.card-body{
-    background-color: bisque;
-    color: aqua;
-}
-.btn{
-    border-radius: .5rem;
-    color: black;
-    width: 48%;
-    font-size: 1.5rem;
-    
-}
-.main{
-    padding-top: 3rem;
-}
-.btn-primary{
-    margin-right: 0px;
-    margin-left: 24.5rem;
-    text-align: left;
-}
-.last{
-    padding-bottom: 4rem;
-}
-.FAQ-S{
-    text-align: center;
+  .domainCards {
+    flex-direction: column;
+  }
+
+  .trackCards {
+    flex-direction: column;
+    margin-left: 12%;
+    justify-content: space-around;
+  }
+
+  .trackCard {
+    width: 80% !important;
+    margin: auto;
+  }
+
+  .FAQHead {
+    color: var(--black);
+    font-size: 0.8em;
+    text-overflow: ellipsis;
+  }
+
+  .aboutUsDesc {
+    width: 80%;
+  }
+
+  .perkCards {
+    /* margin: 10%; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .perkCard {
+    margin: 4%;
+    width: 80%;
+  }
+
+  .perkCard i {
+    font-size: 1.8em;
+  }
+
+  .perkDesc {
+    font-size: 1.4em;
+  }
+
+  .sponsors {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+  }
+
+  .speakerCards {
+    flex-direction: column;
+  }
+
+  .navbar-nav a {
+    color: var(--accentColor) !important;
+    margin: 0 4% !important;
+    padding: 10px 40px !important;
+    border-radius: 0px;
+    font-weight: bold;
+    background-color: black;
+  }
+
+  .H4CText {
+    width: 80%;
+    margin-left: 10%;
+  }
 }
