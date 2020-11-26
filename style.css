@@ -17,7 +17,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.section {
+  margin: 60px 0;
+}
+
 .sectionHeader {
+  margin: 20px 10px 10px 10px;
   color: var(--accentColor) !important;
   font-size: 2.6em;
   text-align: center;
@@ -25,6 +30,7 @@ body {
 }
 
 .sectionSubheader {
+  color: var(--white) !important;
   text-align: center;
   text-transform: uppercase;
 }
@@ -117,74 +123,62 @@ body {
 }
 
 /* ABOUT US  */
-.heading {
-  color: white;
+
+.aboutUsDesc {
+  color: var(--white);
+  width: 50%;
   text-align: center;
-  font-size: 30px;
-  padding-top: 30px;
+  justify-content: center;
+  margin: auto;
 }
-.paragraph {
-  color: #ff07f9;
-  text-align: center;
-}
-.perksheading {
-  color: white;
-  text-align: center;
-  font-size: 30px;
-}
-.perkbuttons {
-  text-align: center;
-}
-.row {
+
+/* Perks Section */
+.perkCards {
   display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 2%;
 }
 
-.column {
-  flex: 33.33%;
-  padding: 5px;
-  margin-left: 120px;
-}
-.row2 {
+.perkCard {
+  background-color: var(--white);
+  margin: 0 100px;
+  padding: 20px 20px;
   display: flex;
+  width: 20%;
+  flex-direction: row;
+  border-radius: 10px;
 }
 
-.column2 {
-  flex: 33.33%;
-  padding: 5px;
-  margin-left: 120px;
+.perkDesc {
+  font-size: 1.8em;
+  margin-left: 4%;
+  margin: auto;
 }
 
-#a1 {
-  font-size: 45px;
-  border-radius: 8px;
-  right: 100px;
-}
-#a2 {
-  font-size: 45px;
-  border-radius: 8px;
-}
-#a3 {
-  font-size: 45px;
-  border-radius: 8px;
-}
-#a4 {
-  font-size: 45px;
-  border-radius: 8px;
-  margin-right: 30px;
-}
-#a5 {
-  font-size: 45px;
-  border-radius: 8px;
+.perkCard i {
+  font-size: 4em;
+  padding: 20px;
 }
 
 @media (max-width: 420px) {
+  .sectionHeader {
+    font-size: 2.2em;
+    margin: 0 40px 10px 40px !important;
+  }
+
+  .sectionSubheader {
+    font-size: 1.2em;
+    margin: 20px 20px;
+  }
   .domainCards {
     flex-direction: column;
   }
 
   .trackCards {
     flex-direction: column;
-    margin-left: 5.4%;
+    margin-left: 12%;
     justify-content: space-around;
   }
 
@@ -197,5 +191,29 @@ body {
     color: var(--black);
     font-size: 0.8em;
     text-overflow: ellipsis;
+  }
+
+  .aboutUsDesc {
+    width: 80%;
+  }
+
+  .perkCards {
+    /* margin: 10%; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .perkCard {
+    margin: 4%;
+    width: 80%;
+  }
+
+  .perkCard i {
+    font-size: 1.8em;
+  }
+
+  .perkDesc {
+    font-size: 1.4em;
   }
 }
