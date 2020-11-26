@@ -1,107 +1,139 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 
 :root {
-    --accentColor: #FF0748;
-    --black: #000000;
-    --white: #FFFFFF;
+  --accentColor: #ff0748;
+  --black: #000000;
+  --white: #ffffff;
 }
 
-html{
-    margin: 0;
-    padding: 0;
-    color: var(--white);
+html {
+  margin: 0;
+  padding: 0;
+  color: var(--white);
 }
 
 body {
-    background-color: var(--black);
-    font-family: 'Poppins', sans-serif;
+  background-color: var(--black);
+  font-family: "Poppins", sans-serif;
 }
 
-.sectionHeader{
-    color: var(--accentColor) !important;
-    font-size: 2.6em;
-    text-align: center;
-    text-transform: uppercase;
+.sectionHeader {
+  color: var(--accentColor) !important;
+  font-size: 2.6em;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.sectionSubheader{
-    text-align: center;
-    text-transform: uppercase;
+.sectionSubheader {
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.trackCards{
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    width: fit-content;
+.trackCards {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: fit-content;
 }
 
-.indent{
-    margin-left: 18%;
+.indent {
+  margin-left: 18%;
 }
 
-.trackCards .trackCard{
-    background-color: var(--white);
-    color: var(--black);
-    padding: 20px 20px;
-    width: 33%;
-    margin: 2%;
-    box-shadow: 8px 8px var(--accentColor);
+.trackCards .trackCard {
+  background-color: var(--white);
+  color: var(--black);
+  padding: 20px 20px;
+  width: 33%;
+  margin: 2%;
+  box-shadow: 8px 8px var(--accentColor);
 }
-.indent .trackCard{
-    width: 33%;
-}
-
-.trackCard .trackHeader{
-    text-transform: uppercase;
-    text-align: center;
+.indent .trackCard {
+  width: 33%;
 }
 
-.trackCard .trackDesc{
-    color: var(--accentColor);
-    font-weight: 500;
-    padding: 0px 30px;
+.trackCard .trackHeader {
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.domainCards{
-    text-align: center;
-    margin: auto;
-    width: fit-content;
-    display: flex;
-    flex-direction: row;
+.trackCard .trackDesc {
+  color: var(--accentColor);
+  font-weight: 500;
+  padding: 0px 30px;
 }
 
-.domainCard{
-    border: 2px solid;
-    border-radius: 30px;
-    border-color: var(--accentColor);
-    padding: 30px 0px 20px 0px;
-    margin: 2%;
-    width: 300px;
+.domainCards {
+  text-align: center;
+  margin: auto;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
 }
 
-.domainCard i{
-    font-size: 4em;
+.domainCard {
+  border: 2px solid;
+  border-radius: 30px;
+  border-color: var(--accentColor);
+  padding: 30px 0px 20px 0px;
+  margin: 2%;
+  width: 300px;
 }
 
-.domainCard .domainName{
-    color: var(--accentColor);
-    font-size: 1.4em;
+.domainCard i {
+  font-size: 4em;
 }
 
+.domainCard .domainName {
+  color: var(--accentColor);
+  font-size: 1.4em;
+}
+
+/* FAQ Section */
+
+.FAQHead {
+  color: var(--black);
+  font-size: 1.4em;
+}
+
+.btn-link:hover {
+  text-decoration: none !important;
+  color: var(--accentColor);
+}
+
+.btn-link:active {
+  text-decoration: none !important;
+}
+
+.btn-link {
+  text-decoration: none !important;
+}
+
+.btn-wrap-text {
+  overflow: hidden;
+  white-space: normal;
+  display: inline-block;
+  text-overflow: ellipsis;
+}
 @media (max-width: 420px) {
-    .domainCards{
-        flex-direction: column;
-    }
-
-    .trackCards{
-        flex-direction: column;
-        margin-left: 5.4%;
-        justify-content: space-around;
-    }
-
-    .trackCard{
-        width: 80% !important;
-        margin: auto;
-    }
+  .domainCards {
+    flex-direction: column;
   }
+
+  .trackCards {
+    flex-direction: column;
+    margin-left: 5.4%;
+    justify-content: space-around;
+  }
+
+  .trackCard {
+    width: 80% !important;
+    margin: auto;
+  }
+
+  .FAQHead {
+    color: var(--black);
+    font-size: 0.8em;
+    text-overflow: ellipsis;
+  }
+}

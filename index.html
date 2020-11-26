@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://kit.fontawesome.com/e57fcbd46d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <title>Hack4Cause 2021</title>
 </head>
 <body>
+    <!-- Tracks Section -->
     <section class="section">
         <h1 class="sectionHeader">Tracks</h1>
         <h3 class="sectionSubheader">Following are the major tracks which you will have to work with</h3>
@@ -38,6 +44,7 @@
         </div>
     </section>
 
+    <!-- Domains Section -->
     <section class="section">
         <h1 class="sectionHeader">Technical Domains</h1>
         <h3 class="sectionSubheader">The below describes the major domains under which you have to work</h3>
@@ -59,6 +66,121 @@
                 <p class="domainName">Image<br />Processing</p>
             </div>
         </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <br /><h1 class="sectionHeader">Frequently Asked Questions</h1>
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-10 mx-auto">
+                    <div class="accordion" id="faqExample">
+                        <div class="card mb-4">
+                            <div class="card-header p-2" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link btn-wrap-text FAQHead" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      Q: Who all can register?
+                                    </button>
+                                  </h5>
+                            </div>
+        
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqExample">
+                                <div class="card-body">
+                                    Anyone can.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header p-2" id="headingTwo">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link btn-wrap-text FAQHead collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Q: What is the registration fee?
+                                </button>
+                              </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqExample">
+                                <div class="card-body">
+                                    It is free
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header p-2" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link btn-wrap-text FAQHead collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                      Q. How many members in a team?
+                                    </button>
+                                  </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
+                                <div class="card-body">
+                                    three to five people
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header p-2" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link btn-wrap-text FAQHead collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                      Q. What is code of conduct?
+                                    </button>
+                                  </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
+                                <div class="card-body">
+                                    The answer to this question can go here. This FAQ example can contain all the Q/A that is needed.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header p-2" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link btn-wrap-text FAQHead collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                      Q. When do applications close?
+                                    </button>
+                                  </h5>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
+                                <div class="card-body">
+                                    The answer to this question can go here. This FAQ example can contain all the Q/A that is needed.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header p-2" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link btn-wrap-text FAQHead collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                      Q. Who are the judges?
+                                    </button>
+                                  </h5>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
+                                <div class="card-body">
+                                    The answer to this question can go here. This FAQ example can contain all the Q/A that is needed.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header p-2" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link btn-wrap-text FAQHead collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                      Q. What is the duration of the hack?
+                                    </button>
+                                  </h5>
+                            </div>
+                            <div id="collapseSeven" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
+                                <div class="card-body">
+                                    The answer to this question can go here. This FAQ example can contain all the Q/A that is needed.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+            <!--/row-->
+        </div>
+        <!--container-->
     </section>
     <script> 
         var deadline = new Date("Mar 11, 2020 21:00:00").getTime(); 
