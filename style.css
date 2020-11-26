@@ -162,6 +162,14 @@ body {
   padding: 20px;
 }
 
+/* sponsors section */
+
+.sponsors {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  margin-left: 25%;
+}
 @media (max-width: 420px) {
   .sectionHeader {
     font-size: 2.2em;
@@ -215,5 +223,11 @@ body {
 
   .perkDesc {
     font-size: 1.4em;
+  }
+
+  .sponsors {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
   }
 }
