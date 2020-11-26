@@ -170,6 +170,8 @@ body {
   margin: auto;
   margin-left: 25%;
 }
+
+/* Media Queries */
 @media (max-width: 420px) {
   .sectionHeader {
     font-size: 2.2em;
