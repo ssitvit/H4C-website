@@ -20,8 +20,7 @@
     <title>Hack4Cause 2021</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
             <a href="#" class="navbar-brand">
                 <img src="/assets/SSITLogo.png" class="logo" height="28" alt="SSIT Logo">
             </a>
@@ -38,27 +37,25 @@
                     <a href="#" class="nav-item nav-link">Sponsors</a>
                     <a href="#" class="nav-item nav-link">Register</a>
                 </div>
-                <!-- <div class="navbar-nav ml-auto">
-                    <a href="#" class="nav-item nav-link">Login</a>
-                </div> -->
             </div>
         </nav>
-    </header>
     <!-- Hero Section -->
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid" id="#">
         <div class="container">
           <div class="H4CLogos">
+            <img src="/assets/cody.png" alt="" class="cody">
               <img src="/assets/H4C Logo.png" alt="" class="H4CText">
-              <!-- <img src="/assets/H4C Box.png" alt="" class="H4CBox"> -->
+              <img src="/assets/H4C Box.png" alt="" class="H4CBox">
           </div>
         </div>
         <div class="timer">
             <div id="countdown"></div>
+            <div class="tags">Days Hours Minutes Seconds</div>
         </div>
       </div>
     <!-- About Us Section -->
-    <section class="section">
-        <h1 class="sectionHeader">About Us</h1>
+    <section class="section" >
+        <h1 class="sectionHeader" id="about">About Us</h1>
         <p class="aboutUsDesc">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar, leo a convallis feugiat, nulla risus euismod felis, a placerat libero leo quis mauris. Nunc tristique facilisis felis, eu eleifend lacus commodo eu. Aliquam hendrerit eget felis non scelerisque. Fusce tempor massa in lacinia tempus. Aenean non lectus id orci rutrum tincidunt id id lectus. Sed non quam urna. Duis tempor lectus risus, sed hendrerit mauris scelerisque pellentesque.
             <br /><br />
@@ -95,7 +92,7 @@
         </div>
     </section>
     <!-- Tracks Section -->
-    <section class="section">
+    <section class="section" id = "tracks">
         <h1 class="sectionHeader">Tracks</h1>
         <h3 class="sectionSubheader">Following are the major tracks which you will have to work with</h3>
         <div class="trackCards">
@@ -149,7 +146,7 @@
     </section>
 
     <!--speakers spot-->
-    <section class="section">
+    <section class="section" id="speakers">
         <h1 class="sectionHeader">SPEAKER'S SECTION</h1>
         <div class="speakerCards">
           <div class="speakerCard">
@@ -177,7 +174,7 @@
       </section>
 
     <!-- FAQ Section -->
-    <section class="section">
+    <section class="section" id="faq">
         <br /><h1 class="sectionHeader">Frequently Asked Questions</h1>
         <div class="container py-3">
             <div class="row">
@@ -291,10 +288,55 @@
         <!--container-->
     </section>
 
-    <section class="section">
+    <section class="section" id="sponsors">
         <h1 class="sectionHeader">Our Sponsors</h1>
         <img src="./assets/sponsors.png" alt="" class="sponsors">
     </section>
+
+    <div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
+        <footer>
+            <div class="row my-5 justify-content-center py-5">
+                <div class="col-11">
+                    <div class="row ">
+                        <div class="col-xl-4 col-md-2 col-sm-2 col-6 my-auto mx-auto a">
+                            <img src="/assets/SSITLogo.png" alt="" class="footerLogo">
+                        </div>
+                        <div class="col-xl-4 col-md-2 col-sm-2 col-6 my-auto mx-auto a map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0016147110123!2d79.15722781536499!3d12.971748218383519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad479f0ccbe067%3A0xfef222e5f36ecdeb!2sVellore%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1606466328745!5m2!1sen!2sin" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                            <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                            <ul class="list-unstyled">
+                                <li><a href="">Home</a></li>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#tracks">Tracks</a></li>
+                                <li><a href="#speakers">Speakers</a></li>
+                                <li><a href="#faq">FAQ</a></li>
+                                <li><a href="#sponsors">Sponsors</a></li>
+                                <li><a href="#register">Register</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                            <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
+                            <p class="mb-1">Vellore Institute of Technology</p>
+                            <p>Vellore, Tamil Nadu - 632014</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                            <p class="social text-muted mb-0 pb-0 bold-text"> <span class="mx-2"><a href="https://www.facebook.com/SSITVIT" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></span> <span class="mx-2"><a href="https://www.linkedin.com/company/ieee-ssit-vit/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></span> <span class="mx-2"><a href="https://www.instagram.com/ieeessit/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></span> </p><small class="rights"><span>&#174;</span> IEEE SSIT - VIT All Rights Reserved.</small>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
+                            <h6 class="mt-55 mt-2 text-muted bold-text"><b>Vivek Murali</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> example@gmail.com</small>
+                        </div>
+                        <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
+                            <h6 class="text-muted bold-text"><b>Sumanth Krishna</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> example@gmail.com</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
     <script> 
         var deadline = new Date("Mar 11, 2021 21:00:00").getTime(); 
         var x = setInterval(function() { 
@@ -304,7 +346,8 @@
         var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
         var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
         var seconds = Math.floor((t % (1000 * 60)) / 1000);
-        document.getElementById("countdown").innerHTML = "<div class='time'> " + days + "d " + hours + "h " + minutes + "m " + seconds + "s " + "</div>"; 
+        // document.getElementById("countdown").innerHTML = "<div class='time'> <span class='number'>" + days + "</span>d<span class='number'> " + hours + "</span>h<span class='number'> " + minutes + "</span>m<span class='number'> " + seconds + "</span>s " + "</div>"; 
+        document.getElementById("countdown").innerHTML = "<div class='time'> <span class='number'>" + days + "</span> : <span class='number'> " + hours + "</span> : <span class='number'> " + minutes + "</span> : <span class='number'> " + seconds + "</span> " + "</div>"; 
             if (t < 0) { 
                 clearInterval(x); 
                 document.getElementById("countdown").innerHTML = `<h2>The Hackathon has begun!!</h2>`
