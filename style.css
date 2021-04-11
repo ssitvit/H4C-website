@@ -206,12 +206,21 @@ body {
 .jumbotron {
   color: white;
   background-image: url(assets/hero.jpg);
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
-
+.jumbotron-heading{
+  z-index: 12;
+  text-align: center!important;
+  color: #627482;
+  font-weight: bolder;
+  margin-top: 2%;
+}
+#typed{
+  
+}
 .navbar-dark {
   background-color: #000000 !important;
   color: var(--white) !important;
@@ -235,8 +244,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 10%;
-  margin-left: -28%;
+  
 }
 
 .H4CText {
@@ -464,3 +472,206 @@ h3 {
     border-radius: 0px;
   }
 }
+
+
+/* new about us  */
+.grid-item-inner h2 {
+  font-size: 25px;
+  line-height: 40px;
+}
+.container {
+  width: 100%;
+  max-width: 1160px;
+  margin: auto;
+}
+.cards-grid {
+  display: grid;
+  grid-template-columns: 31.33% 31.33% 31.33%;
+  grid-gap: 3%;
+  grid-row-gap: 6%;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateX(30deg);
+}
+.grid-item {
+  min-height: 350px;
+  box-shadow: inset 5px 5px 5px rgba(17, 17, 17, 0.116), 
+              inset -5px -5px 15px rgba(255, 255, 255, 0.274), 
+              inset 5px 5px 15px rgba(0,0,0,0.3),
+              inset -5px -5px 15px rgba(255, 255, 255, 0.247);
+  border-radius: 15px;
+  display: flex;
+  position: relative;
+}
+.grid-item-inner {
+  margin: 20px;
+  padding: 20px;
+  background: #303742;
+  color: #fff;
+  border-radius: 20px;
+  transition: 0.3s linear; 
+}
+.grid-item:hover .grid-item-inner {
+  background: #272f3d;
+  box-shadow: 0px 20px 50px rgba(0,0,0,0.5);
+  transform: translateY(-30px);
+}
+.more-link {
+  padding: 5px 10px;
+  margin-top: 20px;
+  display: inline-block;
+  background: #36435c;
+  color: #fff;
+  text-decoration: unset;
+  font-weight: 500;
+  box-shadow: inset 5px 5px 5px rgba(15,98,254,0.2), 
+              inset -5px -5px 15px rgba(255,255,255,0.1), 
+              inset 5px 5px 15px rgba(32, 38, 48, 0.3),
+              inset -5px -5px 15px rgba(255,255,255,0.1);
+}
+.grid-item:nth-child(1):after {
+  content: "01";
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  font-size: 100px;
+  font-weight: 900;
+  color: rgba(0,0,0,0.2);
+}
+.grid-item:nth-child(2):after {
+  content: "02";
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  font-size: 100px;
+  font-weight: 900;
+  color: rgba(0,0,0,0.2);
+}
+.grid-item:nth-child(3):after {
+  content: "03";
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  font-size: 100px;
+  font-weight: 900;
+  color: rgba(0,0,0,0.2);
+}
+
+/* new about us ends  */
+
+
+/* /* nre perks  * */
+
+.container2 {
+  /* position: absolute; */
+  /* height: 300px; */
+  /* width: 600px; */
+  /* top: 60px; */
+  /* left: calc(50% - 300px); */
+  display: flex;
+}
+
+.card {
+  display: flex;
+  height: 280px;
+  width: 288px;
+  margin: 11px 39px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  /* margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  /* left: 0px; */
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card:not(:first-child) {
+    /* margin-left: -50px; */
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  /* left: 50px; */
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0,154,217);
+  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+.circle {
+  position: absolute;
+  top: 150px;
+  color: #989c9e;
+  /* left: calc(50% - 60px); */
+  /* height:100px ;
+  width:100px ; */
+}
+.circle svg{
+  height: 112px;
+  width: 117px;
+  position: relative;
+  left: -5%;
+}
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+svg {
+  fill: #17141d;
+  stroke-width: 2px;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+
+
+
+/* new perks end */
