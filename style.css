@@ -37,6 +37,7 @@ body {
   font-size: 2.6em;
   text-align: center;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .sectionSubheader {
@@ -1137,4 +1138,174 @@ ul .countdown{
 .countdown ul li{
   display: flex;
   flex-direction: column;
+}
+
+/* !Student Organizers */
+.studentOrganizers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #1c1c1c;
+  min-height: 100vh;
+}
+
+.studOrg-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.studOrg-container .studOrgCard {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.studOrg-container .studOrgCard:hover {
+  transform: scale(1.03);
+}
+
+.studOrg-container .studOrgCard .studOrgContent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.studOrg-container .studOrgCard:hover .studOrgContent {
+  opacity: 1;
+}
+
+.studOrg-container .studOrgCard .studOrgContent .studOrg-img {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid rgba(0,0,0,0.25);
+}
+
+.studOrg-container .studOrgCard .studOrgContent .studOrg-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.studOrg-container .studOrgCard .studOrgContent .studOrg-contentBox h3 {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
+}
+
+.studOrg-container .studOrgCard .studOrgContent .studOrg-contentBox h3 span {
+  font-size: 16px;
+  text-transform: initial;
+}
+
+/* !Student Coordinator */
+.studCod {
+  margin: 80px;
+}
+.students {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.student {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin: 0.5em;
+    color: white;
+}
+
+/* !Faculty Organizers */
+.studOrg-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.studOrg-container .studOrgCard {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.studOrg-container .studOrgCard:hover {
+  transform: scale(1.03);
+}
+
+.studOrg-container .studOrgCard .studOrgContent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.studOrg-container .studOrgCard:hover .studOrgContent {
+  opacity: 1;
+}
+
+.studOrg-container .studOrgCard .studOrgContent .studOrg-img {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid rgba(0,0,0,0.25);
+}
+
+.studOrg-container .studOrgCard .studOrgContent .studOrg-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.studOrg-container .studOrgCard .studOrgContent .studOrg-contentBox h3 {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
 }
