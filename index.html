@@ -41,74 +41,72 @@
     <title>Hack4Cause 2021</title>
 </head>
 <body>
-        <!-- <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-            <a href="#" class="navbar-brand">
-                <img src="/assets/SSITLogo.png" class="logo" height="28" alt="SSIT Logo">
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ">
-                    <a href="#" class="nav-item nav-link">Home</a>
-                    <a href="#" class="nav-item nav-link">Tracks</a>
-                    <a href="#" class="nav-item nav-link">Speaker</a>
-                    <a href="#" class="nav-item nav-link">FAQ</a>
-                    <a href="#" class="nav-item nav-link">Sponsors</a>
-                    <a href="#" class="nav-item nav-link">Register</a>
-                </div>
+    <div class="landingcontainer">
+        <div class="landnavbar">
+          <div class="landmenu">
+            <h3 class="landlogo">IEEE <span> SSIT </span> VIT</h3>
+            <div class="landhamburger-landmenu">
+              <div class="landingbar"></div>
             </div>
-        </nav> -->
-
-        <!-- typing effect  -->
-        <h1 class="jumbotron-heading"><span id="typed"> </span><span class="typed-cursor"></span></h1>
-    <!-- Hero Section -->
-    <div class="jumbotron jumbotron-fluid" id="#">
-        <div class="container">
-
-           
-
-
-          <div class="H4CLogos">
-            <img src="./assets/cody.png" alt="" class="cody">
-              <img src="./assets/H4C Logo.png" alt="" class="H4CText">
-              <img src="./assets/H4C Box.png" alt="" class="H4CBox">
           </div>
         </div>
-        <div class="timer">
-            <div id="countdown"></div>
-            <div class="marker">
-            <div class="tags">Days </div>
-            <div class="tags"> Hours  </div>
-            <div class="tags"> Minutes </div>
-            <!-- <div class="tags"> Seconds</div> -->
+  
+        <div class="main-landingcontainer">
+          <div class="landmain">
+            <header>
+              <div class="landoverlay">
+                <div class="landinner">
+  
+  
+                  <!-- typing effect -->
+                  <h1 ><span id="typed"> </span><span class="typed-cursor"></span></h1>
+  
+                  <h3 class="landtitle">BIGGEST HACKATHON IN VIT</h3>
+                  <div class="timer">
+                    <div id="countdown"></div>
+                    <div class="marker">
+                    <div class="timertags">Days </div>
+                    <div class="timertags"> Hours  </div>
+                    <div class="timertags"> Minutes </div>
+                    <!-- <div class="tags"> Seconds</div> -->
+                  </div>
+                </div>
+                  <button class="landbtn">Read more</button>
+                </div>
+              </div>
+            </header>
           </div>
+  
+          <div class="shadow one"></div>
+          <div class="shadow two"></div>
         </div>
-
-        <!-- <ul class="countdown">
-          <li>
-            <span class="days">17</span>
-            <p class="days_ref">days</p>
-          </li>
-          <li class="seperator">:</li>
-          <li>
-            <span class="hours">20</span>
-            <p class="hours_ref">hours</p>
-          </li>
-          <li class="seperator">:</li>
-          <li>
-            <span class="minutes">31</span>
-            <p class="minutes_ref">minutes</p>
-          </li> -->
-         <!-- <li class="seperator">:</li>
-          <li>
-            <span class="seconds">00</span>
-            <p class="seconds_ref">seconds</p>
-          </li>-->
-        </ul>
+  
+        <div class="navlinks">
+          <ul>
+            <li>
+              <a href="#" style="--i: 0.05s;">Home</a>
+            </li>
+            <li>
+              <a href="#" style="--i: 0.1s;">Services</a>
+            </li>
+            <li>
+              <a href="#" style="--i: 0.15s;">Portfolio</a>
+            </li>
+            <li>
+              <a href="#" style="--i: 0.2s;">Testimonials</a>
+            </li>
+            <li>
+              <a href="#" style="--i: 0.25s;">About</a>
+            </li>
+            <li>
+              <a href="#" style="--i: 0.3s;">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
+      
     <!-- About Us Section -->
+
     <section class="section" >
         <h1 class="sectionHeader" id="about">About Us</h1>
         
@@ -831,26 +829,12 @@
             </div>
         </footer>
     </div>
-    <script> 
-        var deadline = new Date("Apr 30 , 2021 21:00:00").getTime(); 
-        var x = setInterval(function() { 
-        var now = new Date().getTime(); 
-        var t = deadline - now; 
-        var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
-        var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
-        var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
-        var seconds = Math.floor((t % (1000 * 60)) / 1000);
-        // document.getElementById("countdown").innerHTML = "<div class='time'> <span class='number'>" + days + "</span>d<span class='number'> " + hours + "</span>h<span class='number'> " + minutes + "</span>m<span class='number'> " + seconds + "</span>s " + "</div>"; 
-        document.getElementById("countdown").innerHTML = "<div class='time'> <span class='number'>" + days + "</span> : <span class='number'> " + hours + "</span> : <span class='number'> " + minutes + "</span> : <span class='number'> " + seconds + "</span> " + "</div>"; 
-            if (t < 0) { 
-                clearInterval(x); 
-                document.getElementById("countdown").innerHTML = `<h2>The Hackathon has begun!</h2>`
-            } 
-        }, 1000);
-    </script>
+    <script src="app.js"></script>
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    
 </body>
 </html>
