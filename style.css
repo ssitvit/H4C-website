@@ -14,6 +14,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 body {
   background-color: var(--black);
   font-family: "Poppins", sans-serif;
@@ -32,7 +33,7 @@ body {
 
 .sectionHeader {
   margin: 20px 10px 10px 10px;
-  color: var(--accentColor) !important;
+  color: var(--white) !important;
   font-size: 2.6em;
   text-align: center;
   text-transform: uppercase;
@@ -200,6 +201,7 @@ body {
 .speakerHead {
   color: var(--accentColor);
   margin-top: 2%;
+  font-family: 'Merienda', cursive;
 }
 
 .speakerDesc {
@@ -717,12 +719,12 @@ svg {
   position: relative;
   width: 600px;
   height: 300px;
-  background: rgb(13, 8, 56);
+  background: #1c1c1c;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 30px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+  box-shadow: 10px 30px 60px rgba(0,0,0,0.6);
   overflow: hidden;
 }
 
@@ -734,7 +736,7 @@ svg {
   position: absolute;
   right: 30px;
   font-size: 3em;
-  color: #e90fa0;
+  color: #02f9e9;
   z-index: 1;
   opacity: 0.1;
   transition: 0.5s;
@@ -798,7 +800,7 @@ svg {
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(to right, transparent, #ff05b4);
+  background: linear-gradient(to right, transparent, #02f9e9);
   animation: animate1 2s linear infinite;
 }
 
@@ -817,7 +819,7 @@ svg {
   right: 0;
   width: 3px;
   height: 100%;
-  background: linear-gradient(to bottom, transparent, #ff05b4);
+  background: linear-gradient(to bottom, transparent, #02f9e9);
   animation: animate2 2s linear infinite;
   animation-delay: 1s;
 }
@@ -837,7 +839,7 @@ svg {
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(to left, transparent, #ff05b4);
+  background: linear-gradient(to left, transparent, #02f9e9);
   animation: animate3 2s linear infinite;
 }
 
@@ -856,7 +858,7 @@ svg {
   left: 0;
   width: 3px;
   height: 100%;
-  background: linear-gradient(to top, transparent, #ff05b4);
+  background: linear-gradient(to top, transparent, #02f9e9);
   animation: animate4 2s linear infinite;
   animation-delay: 1s;
 }
@@ -911,10 +913,6 @@ svg {
   left: 0;
   width: 100%;
   height: 2px;
-}
-
-.domainCard i {
-  font-size: 4em;
 }
 
 .domainCard .domainName {
@@ -995,7 +993,7 @@ svg {
   padding: 30px 0;
   background: rgb(41, 39, 39);
   overflow: hidden;
-  background-image: url("./assets/sponsorsBG.png");
+  background-image: url("./assets/sponsor-bg.png");
   animation: bg 30s linear infinite;
 }
 
@@ -1043,7 +1041,7 @@ svg {
 /*! Brochure */
 #call-to-action {
   overflow: hidden;
-  background: #000;
+  background: #1c1c1c;
   background-size: cover;
   padding: 20px 0;
 }
