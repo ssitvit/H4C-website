@@ -31,7 +31,7 @@ body {
 }
 
 .landnavbar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -316,56 +316,6 @@ ul {
 }
 
 /* responsive navbar  */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
 /* responsive navbar ends  */
 
 /* typing effect  */
@@ -485,7 +435,10 @@ nav {
   margin: auto;
   width: fit-content;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .domainCard {
@@ -509,7 +462,7 @@ nav {
 /* FAQ Section */
 
 .FAQHead {
-  color: var(--black);
+  color: #02f9e9;
   font-size: 1.4em;
 }
 
@@ -532,7 +485,15 @@ nav {
   display: inline-block;
   text-overflow: ellipsis;
 }
-
+.card{
+  background-color: #292727;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 1.25rem;
+}
+div.card-body{
+  color: #02f9e9;
+}
 /* ABOUT US  */
 
 .aboutUsDesc {
@@ -931,13 +892,15 @@ small {
 .grid-item-inner {
   margin: 20px;
   padding: 20px;
-  background: #303742;
+  background: #30374246;
   color: #fff;
   border-radius: 20px;
   transition: 0.3s linear; 
+  
 }
 .grid-item:hover .grid-item-inner {
-  background: #272f3d;
+  /* background: #303742bd; */
+  background-color: #303742bd;
   box-shadow: 0px 20px 50px rgba(0,0,0,0.5);
   transform: translateY(-30px);
 }
@@ -955,7 +918,7 @@ small {
               inset -5px -5px 15px rgba(255,255,255,0.1);
 }
 .grid-item:nth-child(1):after {
-  content: "01";
+  /* content: "01"; */
   position: absolute;
   right: 20px;
   bottom: 0;
@@ -988,22 +951,25 @@ small {
 /* /* new perks  * */
 
 .container2 {
-  /* position: absolute; */
-  /* height: 300px; */
-  /* width: 600px; */
-  /* top: 60px; */
+  position: relative; 
+   height: max-content; 
+   width: 100%; 
+   top: 60px;
   /* left: calc(50% - 300px); */
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.card {
+.cardperks {
   display: flex;
   height: 280px;
-  width: 288px;
-  margin: 11px 39px;
-  background-color: #17141d;
+    width: 420px;
+    margin: 42px 25px;
+  background-color: #1c1c1c;
   border-radius: 10px;
-  box-shadow: -1rem 0 3rem #000;
+  box-shadow: 0rem 0 0.5rem #02f9e9;
   /* margin-left: -50px; */
   transition: 0.4s ease-out;
   position: relative;
@@ -1012,16 +978,16 @@ small {
   justify-content: space-evenly;
 }
 
-.card:not(:first-child) {
+.cardperks:not(:first-child) {
     /* margin-left: -50px; */
 }
 
-.card:hover {
-  transform: translateY(-20px);
+.cardperks:hover {
+  transform: translateY(-50px);
   transition: 0.4s ease-out;
 }
 
-.card:hover ~ .card {
+.cardperks:hover ~ .card {
   position: relative;
   /* left: 50px; */
   transition: 0.4s ease-out;
@@ -1055,12 +1021,12 @@ small {
   z-index: 3;
   width: 0px;
   height: 100%;
-  background: rgb(0,154,217);
-  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  background: #02f9e9;
+  background: linear-gradient(90deg, #02f9e881,0%, #ec1f57 65%, #02f9e9 100%);
   transition: 0.6s ease-out;
 }
 
-.card:hover .filledbar {
+.cardperks:hover .filledbar {
   width: 120px;
   transition: 0.4s ease-out;
 }
