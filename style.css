@@ -435,7 +435,10 @@ nav {
   margin: auto;
   width: fit-content;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .domainCard {
@@ -459,7 +462,7 @@ nav {
 /* FAQ Section */
 
 .FAQHead {
-  color: var(--black);
+  color: #02f9e9;
   font-size: 1.4em;
 }
 
@@ -482,7 +485,15 @@ nav {
   display: inline-block;
   text-overflow: ellipsis;
 }
-
+.card{
+  background-color: #292727;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 1.25rem;
+}
+div.card-body{
+  color: #02f9e9;
+}
 /* ABOUT US  */
 
 .aboutUsDesc {
@@ -881,13 +892,15 @@ small {
 .grid-item-inner {
   margin: 20px;
   padding: 20px;
-  background: #303742;
+  background: #30374246;
   color: #fff;
   border-radius: 20px;
   transition: 0.3s linear; 
+  
 }
 .grid-item:hover .grid-item-inner {
-  background: #272f3d;
+  /* background: #303742bd; */
+  background-color: #303742bd;
   box-shadow: 0px 20px 50px rgba(0,0,0,0.5);
   transform: translateY(-30px);
 }
@@ -905,7 +918,7 @@ small {
               inset -5px -5px 15px rgba(255,255,255,0.1);
 }
 .grid-item:nth-child(1):after {
-  content: "01";
+  /* content: "01"; */
   position: absolute;
   right: 20px;
   bottom: 0;
@@ -939,11 +952,14 @@ small {
 
 .container2 {
   position: relative; 
-   height: 328px; 
+   height: max-content; 
    width: 100%; 
    top: 60px;
   /* left: calc(50% - 300px); */
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .cardperks {
