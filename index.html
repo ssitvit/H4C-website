@@ -35,10 +35,13 @@
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+
+    <!-- animation  section  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Hack4Cause 2021</title>
 </head>
 <body>
-        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <!-- <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
             <a href="#" class="navbar-brand">
                 <img src="/assets/SSITLogo.png" class="logo" height="28" alt="SSIT Logo">
             </a>
@@ -56,7 +59,7 @@
                     <a href="#" class="nav-item nav-link">Register</a>
                 </div>
             </div>
-        </nav>
+        </nav> -->
 
         <!-- typing effect  -->
         <h1 class="jumbotron-heading"><span id="typed"> </span><span class="typed-cursor"></span></h1>
@@ -75,17 +78,40 @@
         </div>
         <div class="timer">
             <div id="countdown"></div>
-            <div class="tags">Days Hours Minutes Seconds</div>
+            <div class="marker">
+            <div class="tags">Days </div>
+            <div class="tags"> Hours  </div>
+            <div class="tags"> Minutes </div>
+            <!-- <div class="tags"> Seconds</div> -->
+          </div>
         </div>
+
+        <!-- <ul class="countdown">
+          <li>
+            <span class="days">17</span>
+            <p class="days_ref">days</p>
+          </li>
+          <li class="seperator">:</li>
+          <li>
+            <span class="hours">20</span>
+            <p class="hours_ref">hours</p>
+          </li>
+          <li class="seperator">:</li>
+          <li>
+            <span class="minutes">31</span>
+            <p class="minutes_ref">minutes</p>
+          </li> -->
+         <!-- <li class="seperator">:</li>
+          <li>
+            <span class="seconds">00</span>
+            <p class="seconds_ref">seconds</p>
+          </li>-->
+        </ul>
       </div>
     <!-- About Us Section -->
     <section class="section" >
         <h1 class="sectionHeader" id="about">About Us</h1>
-        <!-- <p class="aboutUsDesc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar, leo a convallis feugiat, nulla risus euismod felis, a placerat libero leo quis mauris. Nunc tristique facilisis felis, eu eleifend lacus commodo eu. Aliquam hendrerit eget felis non scelerisque. Fusce tempor massa in lacinia tempus. Aenean non lectus id orci rutrum tincidunt id id lectus. Sed non quam urna. Duis tempor lectus risus, sed hendrerit mauris scelerisque pellentesque.
-            <br /><br />
-            Ut vel convallis metus, quis mollis nibh. Donec in lacus sed arcu pulvinar elementum sodales imperdiet justo. Nulla at ipsum lacus. Cras vitae erat sem. Cras iaculis dui nec urna viverra, eu accumsan lectus sollicitudin. Phasellus eu rutrum libero. Pellentesque in convallis nisi. Aenean efficitur, tellus eu consectetur rutrum, dolor lectus ultricies metus, in semper nisl nisi sit amet est. Nam ultrices felis nunc, quis euismod urna ultricies et.
-        </p> -->
+        
         <div class="cards-outer">
             <div class="container">
                 
@@ -175,6 +201,59 @@
                 <div class="filledbar"></div>
               </div>
               <div class="circle">
+                <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero delectus ea aut quo, autem blanditiis consequatur iure tempora officia. Mollitia?</p>
+                
+              </svg>
+              
+              </div>
+             
+            </div>
+
+          </div>
+          <div class="container2">
+            <div class="card">
+              <h3 class="title"><i class="fas fa-user-plus"></i></h3>
+              <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+              </div>
+              <div class="circle">
+                <h3 class="perkDesc">Free Registration!</h3>
+              </svg>
+              </div>
+            </div>
+            <div class="card">
+              <h3 class="title"><i class="fas fa-globe-americas"></i></h3>
+              <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+              </div>
+              <div class="circle">
+                <h3 class="perkDesc">Online Event !</h3>
+              </svg>
+              </div>
+            </div>
+            <div class="card">
+                <h3 class="title"><i class="fas fa-award"></i></h3>
+                
+              <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+              </div>
+              <div class="circle">
+                <h3 class="perkDesc">Awesome prizes!</h3>
+                
+              </svg>
+              
+              </div>
+            </div>
+            <div class="card">
+              <h3 class="title"><i class="fas fa-users-cog"></i></h3>
+              <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+              </div>
+              <div class="circle">
                 <h3 class="perkDesc">Great Oppurtunity</h3>
                 
               </svg>
@@ -187,85 +266,236 @@
     
     </section>
     <!-- Tracks Section -->
-    <section class="section" id = "tracks">
-        <h1 class="sectionHeader">Tracks</h1>
-        <h3 class="sectionSubheader">Following are the major tracks which you will have to work with</h3>
-        <div class="trackCards">
-            <div class="trackCard">
-                <h2 class="trackHeader">healthcare</h2>
-                <p class="trackDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ex volutpat, maximus neque vitae, tempus diam. Vivamus imperdiet ex non convallis malesuada. Cras dignissim, lacus sit amet venenatis auctor, ex purus blandit eros, in scelerisque magna elit vitae diam.</p>
-            </div>
-            <div class="trackCard">
-                <h2 class="trackHeader">Agriculture</h2>
-                <p class="trackDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ex volutpat, maximus neque vitae, tempus diam. Vivamus imperdiet ex non convallis malesuada. Cras dignissim, lacus sit amet venenatis auctor, ex purus blandit eros, in scelerisque magna elit vitae diam.</p>
-            </div>
-            <div class="trackCard">
-                <h2 class="trackHeader">AI</h2>
-                <p class="trackDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ex volutpat, maximus neque vitae, tempus diam. Vivamus imperdiet ex non convallis malesuada. Cras dignissim, lacus sit amet venenatis auctor, ex purus blandit eros, in scelerisque magna elit vitae diam.</p>
-            </div>
-        </div>
-        <div class="trackCards indent">
-            <div class="trackCard">
-                <h2 class="trackHeader">Energy Management</h2>
-                <p class="trackDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ex volutpat, maximus neque vitae, tempus diam. Vivamus imperdiet ex non convallis malesuada. Cras dignissim, lacus sit amet venenatis auctor, ex purus blandit eros, in scelerisque magna elit vitae diam.</p>
-            </div>
-            <div class="trackCard">
-                <h2 class="trackHeader">Security and surveillance</h2>
-                <p class="trackDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ex volutpat, maximus neque vitae, tempus diam. Vivamus imperdiet ex non convallis malesuada. Cras dignissim, lacus sit amet venenatis auctor, ex purus blandit eros, in scelerisque magna elit vitae diam.</p>
-            </div>
-        </div>
+    <section class="section" id="tracks" >
+      <h1 class="sectionHeader">Tracks</h1>
+      <div class="trackContainer">
+      <div class="trackCard" data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="trackContent">
+              <h2>01</h2>
+              <h3>Healthcare</h3>
+              <p>In India, considerable work has been done to reform the healthcare sector, which has involves the government and various stakeholders. Delivering affordable health care to billions of people presents enormous challenges for the medical community</p>
+          </div>
+      </div>
+      <div class="trackCard" data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="trackContent">
+              <h2>02</h2>
+              <h3>Agriculture</h3>
+              <p>Being the primary source of income for more than half the nation, advancements in the field of agriculture are synchronous with the nation's strides towards becoming a global superpower.</p>
+          </div>
+      </div>
+      <div class="trackCard" data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="trackContent">
+              <h2>03</h2>
+              <h3>Education & Productivity</h3>
+              <p>Education is the foundation on which the development of every citizen and the nation as a whole built on. Education can shape an individual's life, both in the classroom and outside. Productivity is very essential in every sector for rapid development</p>
+          </div>
+      </div>
+      <div class="trackCard" data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="trackContent">
+              <h2>04</h2>
+              <h3>Disaster Management</h3>
+              <p>Disaster Management can be defined as the organization and management of resources and responsibilities for dealing with all humanitarian aspects of emergencies.</p>
+          </div>
+      </div>
+      <div class="trackCard" data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="trackContent">
+              <h2>05</h2>
+              <h3>Security & Surveillance</h3>
+              <p>Security and surveillance are implemented by criminal justice agencies to maintain order, enforce the law and to reduce victimization in the society.</p>
+          </div>
+      </div>
+      <div class="trackCard" data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="trackContent">
+              <h2>06</h2>
+              <h3>Industrial Development</h3>
+              <p> With the start of industrial revolution in late 1800s, industrial development is seen as a key player to determine a nation's human development and quality of living.</p>
+          </div>
+      </div>
+      <div class="trackCard" data-aos="fade-up" data-aos-anchor-placement="top-center">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class="trackContent">
+              <h2>07</h2>
+              <h3>Open Innovation</h3>
+              <p>Open innovation is a concept AI originated that falls directly in the gap between business and academics. It leads to greater technological advancements in a relatively shorter time because together we work, together we innovate.</p>
+          </div>
+      </div>
+
+      </div>
+
+  </section>
+
+  <!-- Domains Section -->
+  <section class="section">
+      <h1 class="sectionHeader">Technical Domains</h1>
+      <div class="domainCards">
+          <div class="domainCard" data-aos="zoom-out-right">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <p class="domainName">Machine<br />Learning</p>
+          </div>
+          <div class="domainCard" data-aos="zoom-out-up">
+              <p class="domainName">Internet of <br> Things</p>
+          </div>
+          <div class="domainCard" data-aos="zoom-out-left">
+              <p class="domainName">Cyber<br /> Security</p>
+          </div>
+      </div>
+      <div class="domainCards">
+          <div class="domainCard" data-aos="zoom-out-right">
+              <p class="domainName">Artificial<br />Intelligence</p>
+          </div>
+          <div class="domainCard" data-aos="zoom-out-up">
+              <p class="domainName">Image <br>Processing</p>
+          </div>
+          <div class="domainCard" data-aos="zoom-out-left">
+              <p class="domainName">Software<br /> Development</p>
+          </div>
+      </div>
+  </section>
+
+  <!-- Sponsors -->
+  
+
+  <!--speakers spot-->
+  <section class="section" id="speakers">
+      <h1 class="sectionHeader">SPEAKER'S SECTION</h1>
+      <div class="profiles">
+          <div class="profile"data-aos="zoom-in-right" >
+              <img src="./assets/naman.jpg" class="profile-img">
+              <h3 class="user-name">Naman</h3>
+              <h5>Hello</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam esse in cupiditate natus dolorem cumque, eos quae atque! Consectetur, laboriosam.</p>
+          </div>
+          <div class="profile" data-aos="zoom-in-right">
+              <img src="./assets/naman.jpg" class="profile-img">
+              <h3 class="user-name">Naman</h3>
+              <h5>Hello</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam esse in cupiditate natus dolorem cumque, eos quae atque! Consectetur, laboriosam.</p>
+          </div>
+          <div class="profile" data-aos="zoom-in-left">
+              <img src="./assets/naman.jpg" class="profile-img">
+              <h3 class="user-name">Naman</h3>
+              <h5>Hello</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam esse in cupiditate natus dolorem cumque, eos quae atque! Consectetur, laboriosam.</p>
+          </div>
+          <div class="profile" data-aos="zoom-in-left">
+              <img src="./assets/naman.jpg" class="profile-img">
+              <h3 class="user-name">Naman</h3>
+              <h5>Hello</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam esse in cupiditate natus dolorem cumque, eos quae atque! Consectetur, laboriosam.</p>
+          </div>
+      </div>
     </section>
 
-    <!-- Domains Section -->
-    <section class="section">
-        <h1 class="sectionHeader">Technical Domains</h1>
-        <h3 class="sectionSubheader">The below describes the major domains under which you have to work</h3>
-        <div class="domainCards">
-            <div class="domainCard">
-                <i class="fas fa-user-shield"></i>
-                <p class="domainName">Machine<br />Learning</p>
-            </div>
-            <div class="domainCard">
-                <i class="far fa-file-image"></i>
-                <p class="domainName">IoT</p>
-            </div>
-            <div class="domainCard">
-                <i class="fas fa-user-shield"></i>
-                <p class="domainName">Cyber<br /> Security</p>
-            </div>
-            <div class="domainCard">
-                <i class="far fa-file-image"></i>
-                <p class="domainName">Image<br />Processing</p>
-            </div>
-        </div>
-    </section>
-    <!--speakers spot-->
-    <section class="section" id="speakers">
-        <h1 class="sectionHeader">SPEAKER'S SECTION</h1>
-        <div class="speakerCards">
-          <div class="speakerCard">
-            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80" alt="" class="speakerImg">
-            <h2 class="speakerHead">Aditya A B</h2>
-            <p class="speakerDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque, leo sit amet finibus efficitur, tellus massa vulputate nibh, eget.</p>
+    <!--Sponsors  -->
+    <section id="clients">
+          <div class="container">
+              <div class="section-header">
+                  <h3 class="section-title">Sponsors</h3>
+                  <span class="section-divider"></span>
+              </div>
+
+              <h4 class="title-sponsor">TITLE SPONSOR</h4>
+              <span class="section-divider-2"></span>
+              <div class="row wow fadeInUp">
+                  <!-- <div class="col-md-4"></div> -->
+                  <div class="m-auto">
+                      <a class="sponsor-link" href="https://www.cropin.com/" target="_blank">
+                          <img class="sponsor-img" src="./assets/sponsors/cropin_logo.png" alt="CROPIN">
+                      </a>
+                  </div>
+                  <!-- <div class="col-md-4"></div> -->
+              </div>
+
+              <h4 class="title-sponsor">PROUD SPONSORS</h4>
+              <span class="section-divider-2"></span>
+              <div class="sponsors">
+                  <div class="sponsor">
+                      <a class="sponsor-link" href="http://rosenfeldmedia.com/" target="_blank">
+                          <img class="sponsor-img" src="./assets/sponsors/rm-logo.svg" alt="RM">
+                      </a>
+                  </div>
+                  <div class="sponsor">
+                      <a class="sponsor-link" href="https://virtuosonetsoft.com/" target="_blank">
+                          <img class="sponsor-img" src="./assets/sponsors/vn-logo.png" alt="Virtuoso">
+                      </a>
+                  </div>
+              </div>
+              <div class="group">
+                  <div>
+                      <h4 class="title-sponsor">INNOVATION PARTNER</h4>
+                      <span class="section-divider-2"></span>
+                      <div class="sponsors">
+                          <div class="sponsor">
+                              <a class="sponsor-link" href="https://hoverrobotix.com/" target="_blank">
+                                  <img class="sponsor-img" src="./assets/sponsors/hover-logo.png" alt="Hover">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div>
+                      <h4 class="title-sponsor">KNOWLEDGE PARTNER</h4>
+                      <span class="section-divider-2"></span>
+                      <div class="sponsors">
+                          <div class="sponsor">
+                              <a class="sponsor-link" href="https://www.c4projects.tech/" target="_blank">
+                                  <img class="sponsor-img" src="./assets/sponsors/c4-logo.png" alt="Hover">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="speakerCard">
-            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80" alt="" class="speakerImg">
-            <h2 class="speakerHead">Sita A B</h2>
-            <p class="speakerDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque, leo sit amet finibus efficitur, tellus massa vulputate nibh, eget.</p>
-          </div>
-          <div class="speakerCard">
-            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80" alt="" class="speakerImg">
-            <h2 class="speakerHead">ABDUL A B</h2>
-            <p class="speakerDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque, leo sit amet finibus efficitur, tellus massa vulputate nibh, eget.</p>
-          </div>
-          <div class="speakerCard">
-            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2134&q=80" alt="" class="speakerImg">
-            <h2 class="speakerHead">ABDUL A B</h2>
-            <p class="speakerDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque, leo sit amet finibus efficitur, tellus massa vulputate nibh, eget.</p>
-          </div>
-  
-        </div>
       </section>
+
+  <!-- Brouchure -->
+  <section id="call-to-action">
+          <div class="container pt-4 pb-4">
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-9 text-center ">
+                <h3 class="cta-title">Interested in Sponsoring ?</h3>
+                <p class="cta-text"> Here's the brochure.</p>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center ">
+              <div class="col-lg-3 cta-btn-container text-center ">
+                <a class="cta-btn align-middle"
+                  href="https://drive.google.com/file/d/1MiXJ4mteQZf0nCLSZ1QfdYBPlE6IA5ID/view?usp=sharing"
+                  target="_blank">Brochure</a>
+              </div>
+            </div>
+  
+          </div>
+        </section>
 
     <!-- FAQ Section -->
     <section class="section" id="faq">
@@ -432,7 +662,7 @@
         </footer>
     </div>
     <script> 
-        var deadline = new Date("Mar 11, 2021 21:00:00").getTime(); 
+        var deadline = new Date("Apr 30 , 2021 21:00:00").getTime(); 
         var x = setInterval(function() { 
         var now = new Date().getTime(); 
         var t = deadline - now; 
@@ -447,6 +677,10 @@
                 document.getElementById("countdown").innerHTML = `<h2>The Hackathon has begun!</h2>`
             } 
         }, 1000);
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>
