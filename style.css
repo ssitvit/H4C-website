@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Titillium+Web:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -15,6 +16,18 @@
   /* --black: #000000f1; */
   --black: #1c1c1a;
   --white: #ffffff;
+}
+html {
+    scroll-behavior: smooth;
+
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
 }
 body {
   background-color: var(--black);
@@ -137,9 +150,10 @@ header {
 }
 
 .landtitle {
-  font-size: 6rem;
+  font-size: 4.5rem;
   margin-bottom: 6%;
-  font-family: 'Stylish', sans-serif;
+  font-family: 'Teko', sans-serif;
+  margin-top: 3%;
 }
 
 .landbtn {
@@ -891,7 +905,9 @@ small {
 }
 .grid-item-inner {
   margin: 20px;
-  padding: 20px;
+  padding: 40px;
+  text-align: center;
+  line-height: 1.5rem;
   background: #30374246;
   color: #fff;
   border-radius: 20px;
@@ -1116,7 +1132,7 @@ svg {
 
 .trackContainer .trackCard .trackContent h3 {
   position: relative;
-  font-size: 5px;
+  font-size: 3em;
   color: #fff;
   z-index: 2;
   opacity: 0.5;
@@ -1332,6 +1348,7 @@ svg {
   font-style: italic;
 }
 
+
 .section-header .section-divider {
   display: block;
   width: 60px;
@@ -1391,6 +1408,10 @@ svg {
 .sponsor > a {
   width: 200px !important;
   height: 150px;
+}
+
+.phxGlobal {
+  margin: 35px;
 }
 
 .students {
