@@ -450,34 +450,6 @@ nav {
   padding: 0px 30px;
 }
 
-.domainCards {
-  text-align: center;
-  margin: auto;
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.domainCard {
-  border: 2px solid;
-  border-radius: 30px;
-  border-color: var(--accentColor);
-  padding: 30px 0px 20px 0px;
-  margin: 2%;
-  width: 300px;
-}
-
-.domainCard i {
-  font-size: 4em;
-}
-
-.domainCard .domainName {
-  color: var(--accentColor);
-  font-size: 1.4em;
-}
 
 /* FAQ Section */
 
@@ -1124,6 +1096,7 @@ svg {
 .trackContainer .trackCard .trackContent h2 {
   position: absolute;
   right: 30px;
+  top: 20px;
   font-size: 3em;
   color: #02f9e9;
   z-index: 1;
@@ -1133,7 +1106,6 @@ svg {
 
 .trackContainer .trackCard:hover .trackContent h2 {
   opacity: 1;
-  transform: translateY(-70px);
 }
 
 .trackContainer .trackCard .trackContent h3 {
@@ -1266,65 +1238,7 @@ svg {
 
 
 
-/* !Domains */
-.domainCards {
-  text-align: center;
-  margin: auto;
-  width: fit-content;
-  display: flex;
-  flex-direction: row;
-}
-
-.domainCard {
-  border: 1.5px solid;
-  border-radius: 30px;
-  border-color: var(--accentColor);
-  padding: 30px 0px 20px 0px;
-  margin: 2%;
-  width: 300px;
-}
-
-.domainCard span:nth-child(1) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-}
-
-.domainCard i {
-  font-size: 4em;
-}
-
-.domainCard span:nth-child(1) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-}
-
-.domainCard .domainName {
-  color: #fff;
-  font-size: 1.4em;
-  text-transform: uppercase;
-}
-
-.domainCard:hover{
-  transform: scale(1.09);
-  transition: all 0.2s ease-in;
-   
-   border-color: var(--white);
-    background-color: var(--accentColor);
-    color:var(--black);
-
-}
-
-.domainCard .domainName {
-  color: #fff;
-  font-size: 1.4em;
-  text-transform: uppercase;
-}
+/* !Domain and Track have same classes */
 
 
 
