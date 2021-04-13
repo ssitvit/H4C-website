@@ -1293,6 +1293,7 @@ svg {
   flex-wrap: wrap;
 }
 
+
 #clients {
   padding: 30px 0;
   background: rgb(41, 39, 39);
@@ -1333,6 +1334,7 @@ svg {
 .phxGlobal {
   margin: 35px;
 }
+
 
 .students {
   display: flex;
