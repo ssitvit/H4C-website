@@ -403,7 +403,7 @@ nav {
 }
 
 .sectionHeader {
-    margin: 20px 10px 10px 10px;
+    margin: 1em 10px 10px 10px;
     color: var(--white) !important;
     font-size: 2.6em;
     text-align: center;
@@ -453,9 +453,9 @@ nav {
 
 /* FAQ Section */
 
-.FAQHead {
+h5 > .FAQHead {
     color: #02f9e9;
-    font-size: 1.4em;
+    font-size: 1rem;
 }
 
 .btn-link:hover {
@@ -485,6 +485,7 @@ nav {
 }
 div.card-body {
     color: #02f9e9;
+    font-size: 0.9rem;
 }
 /* ABOUT US  */
 
@@ -678,7 +679,7 @@ nav {
 /* Footer */
 .container-fluid {
     overflow: hidden;
-    margin-top: 250px;
+    margin-top: 100px;
     background: #262626;
     color: #627482 !important;
     margin-bottom: 0;
@@ -735,7 +736,7 @@ small {
 @media (max-width: 1020px) {
     .sectionHeader {
         font-size: 2.2em;
-        margin: 0 40px 10px 40px !important;
+        margin: 1em 40px 8px 40px !important;
     }
 
     .sectionSubheader {
@@ -842,15 +843,15 @@ small {
 }
 
 /* new about us  */
-.grid-item-inner h4 {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    font-weight: 300;
+.grid-item-inner p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    font-weight: 200;
     text-align: justify;
 }
 .container {
     width: 100%;
-    max-width: 1160px;
+    max-width: 1100px;
     margin: auto;
 }
 
@@ -865,42 +866,53 @@ small {
     transform: perspective(1000px) rotateX(30deg);
 }
 .grid-item {
-    min-height: 350px;
+    min-height: 320px;
     box-shadow: inset 5px 5px 5px rgba(17, 17, 17, 0.116),
-        inset -5px -5px 15px rgba(255, 255, 255, 0.274), inset 5px 5px 15px rgba(0, 0, 0, 0.3),
-        inset -5px -5px 15px rgba(255, 255, 255, 0.247);
-    border-radius: 15px;
+        inset -5px -5px 15px rgba(255, 255, 255, 0.2), inset 5px 5px 15px rgba(0, 0, 0, 0.3),
+        inset -5px -5px 15px rgba(255, 255, 255, 0.2);
+    border-radius: 18px;
     display: flex;
     position: relative;
 }
 
 .grid-item-inner {
-    margin: 20px;
-    padding: 40px;
+    margin: 10px;
+    padding: 2em 4%;
     text-align: center;
-    line-height: 1.5rem;
     background: #30374246;
     color: #fff;
-    border-radius: 20px;
+    border-radius: 18px;
     transition: 0.3s linear;
 }
+
+.grid-item:hover {
+    box-shadow: inset -0px -20px 50px rgba(236, 31, 87, 0.4);
+}
+
 .grid-item:hover .grid-item-inner {
     /* background: #303742bd; */
-    background-color: #303742bd;
-    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5);
-    transform: translateY(-30px);
+    background-color: #232323;
+    box-shadow: none;
+    transform: translateY(-15px);
 }
 .more-link {
-    padding: 5px 10px;
-    margin-top: 20px;
-    display: inline-block;
-    background: #36435c;
+    margin-top: 1rem;
+    padding: 0.6rem 1.8rem;
+    background-color: #ec1f57;
+    border: none;
+    border-radius: 25px;
     color: #fff;
-    text-decoration: unset;
-    font-weight: 500;
-    box-shadow: inset 5px 5px 5px rgba(15, 98, 254, 0.2),
-        inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(32, 38, 48, 0.3),
-        inset -5px -5px 15px rgba(255, 255, 255, 0.1);
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+
+    /* padding: 5px 10px;
+    margin-top: 20px; */
+    display: inline-block;
+    /* font-weight: 500; */
+    /* box-shadow: inset 5px 5px 5px rgba(243, 73, 73, 0.2),
+        inset -5px -5px 15px rgba(245, 54, 54, 0.1), inset 5px 5px 15px rgba(32, 38, 48, 0.3),
+        inset -5px -5px 15px rgba(236, 75, 75, 0.1); */
 }
 .grid-item:nth-child(1):after {
     /* content: "01"; */
