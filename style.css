@@ -1104,7 +1104,7 @@ svg {
     right: 30px;
     top: 20px;
     font-size: 3em;
-    color: #02f9e9;
+    color: #ec1f57;
     z-index: 1;
     opacity: 0.1;
     transition: 0.5s;
@@ -1164,7 +1164,7 @@ svg {
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(to right, transparent, #02f9e9);
+    background: linear-gradient(to right, transparent, #ec1f57);
     animation: animate1 2s linear infinite;
 }
 
@@ -1183,7 +1183,7 @@ svg {
     right: 0;
     width: 3px;
     height: 100%;
-    background: linear-gradient(to bottom, transparent, #02f9e9);
+    background: linear-gradient(to bottom, transparent, #ec1f57);
     animation: animate2 2s linear infinite;
     animation-delay: 1s;
 }
@@ -1203,7 +1203,7 @@ svg {
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(to left, transparent, #02f9e9);
+    background: linear-gradient(to left, transparent, #ec1f57);
     animation: animate3 2s linear infinite;
 }
 
@@ -1222,7 +1222,7 @@ svg {
     left: 0;
     width: 3px;
     height: 100%;
-    background: linear-gradient(to top, transparent, #02f9e9);
+    background: linear-gradient(to top, transparent, #ec1f57);
     animation: animate4 2s linear infinite;
     animation-delay: 1s;
 }
@@ -1261,7 +1261,7 @@ svg {
     right: 30px;
     top: 20px;
     font-size: 3em;
-    color: #ec1f57;
+    color: #02f9e9;
     z-index: 1;
     opacity: 0.1;
     transition: 0.5s;
@@ -1321,7 +1321,7 @@ svg {
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(to right, transparent, #ec1f57);
+    background: linear-gradient(to right, transparent, #02f9e9);
     animation: animate1 2s linear infinite;
 }
 
@@ -1340,7 +1340,7 @@ svg {
     right: 0;
     width: 3px;
     height: 100%;
-    background: linear-gradient(to bottom, transparent, #ec1f57);
+    background: linear-gradient(to bottom, transparent, #02f9e9);
     animation: animate2 2s linear infinite;
     animation-delay: 1s;
 }
@@ -1360,7 +1360,7 @@ svg {
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(to left, transparent, #ec1f57);
+    background: linear-gradient(to left, transparent, #02f9e9);
     animation: animate3 2s linear infinite;
 }
 
@@ -1379,7 +1379,7 @@ svg {
     left: 0;
     width: 3px;
     height: 100%;
-    background: linear-gradient(to top, transparent, #ec1f57);
+    background: linear-gradient(to top, transparent, #02f9e9);
     animation: animate4 2s linear infinite;
     animation-delay: 1s;
 }
