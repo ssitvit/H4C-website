@@ -516,7 +516,7 @@ div.card-body {
 }
 
 .perkDesc {
-    font-size: 1.8em !important;
+    font-size: 1.5rem !important;
     margin-left: 4%;
     margin: auto;
 }
@@ -842,9 +842,11 @@ small {
 }
 
 /* new about us  */
-.grid-item-inner h2 {
-    font-size: 25px;
-    line-height: 40px;
+.grid-item-inner h4 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 300;
+    text-align: justify;
 }
 .container {
     width: 100%;
@@ -1022,6 +1024,7 @@ small {
 .circle {
     position: absolute;
     top: 150px;
+    margin: 0 0.5em;
     color: #989c9e;
     /* left: calc(50% - 60px); */
     /* height:100px ;
