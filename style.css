@@ -1238,7 +1238,160 @@ svg {
 
 /* tracks ends  */
 
-/* !Domain and Track have same classes */
+/* !Domain */
+.trackContainer .domainCard {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    background: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    box-shadow: 10px 30px 60px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+
+.trackContainer .domainCard .domainContent {
+    padding: 30px;
+    text-align: center;
+}
+.trackContainer .domainCard .domainContent h2 {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 3em;
+    color: #ec1f57;
+    z-index: 1;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+.trackContainer .domainCard:hover .domainContent h2 {
+    opacity: 1;
+}
+
+.trackContainer .domainCard .domainContent h3 {
+    position: relative;
+    font-size: 2.5em;
+    color: #fff;
+    z-index: 2;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.trackContainer .domainCard .domainContent p {
+    position: relative;
+    font-size: 14px;
+    color: #fff;
+    z-index: 2;
+    opacity: 0.5;
+    font-weight: 300;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.trackContainer .domainCard:hover .domainContent h3,
+.trackContainer .domainard:hover .domainContent p {
+    opacity: 1;
+}
+
+.trackContainer .domainCard::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    pointer-events: none;
+}
+
+.trackContainer .domainCard span {
+    transition: 0.5s;
+    opacity: 0;
+}
+.trackContainer .domainCard:hover span {
+    opacity: 1;
+}
+
+.trackContainer .domainCard span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #ec1f57);
+    animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.trackContainer .domainCard span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #ec1f57);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.trackContainer .domainCard span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, #ec1f57);
+    animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3 {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.trackContainer .domainCard span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #ec1f57);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate4 {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
 
 /* !Sponsors section */
 
@@ -1349,6 +1502,7 @@ svg {
 .phxGlobal {
     margin: 35px;
 }
+
 
 .students {
     display: flex;
