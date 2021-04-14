@@ -1463,7 +1463,7 @@ svg {
 
 #clients {
     padding: 30px 0;
-    background: rgb(41, 39, 39);
+    background: #1c1c1a;
     overflow: hidden;
     background-image: url("./assets/sponsor-bg.png");
     animation: bg 30s linear infinite;
@@ -1510,7 +1510,6 @@ svg {
 .phxGlobal {
     margin: 35px;
 }
-
 
 .students {
     display: flex;
