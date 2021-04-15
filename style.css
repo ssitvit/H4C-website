@@ -517,11 +517,12 @@ div.card-body {
 }
 
 .perkDesc {
-    font-size: 1.5rem !important;
+    font-size: 1.15rem !important;
     margin-left: 4%;
     margin: auto;
     margin-top: -47px;
     text-align: center;
+    font-weight: lighter;
 }
 
 .perkCard i {
@@ -988,7 +989,7 @@ small {
 }
 
 .cardperks:hover {
-    transform: translateY(-50px);
+    transform: translateY(-25px);
     transition: 0.4s ease-out;
 }
 
@@ -1003,8 +1004,8 @@ small {
     font-weight: 300;
     position: absolute; 
     text-align: center;
-    top: 15px;
-    
+    top: 25px;
+    font-size: 1.5rem;
 }
 
 .bar {
