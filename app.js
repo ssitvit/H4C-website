@@ -10,7 +10,7 @@ window.onload = function () {
     var typed = new Typed("#typed", {
         strings: [
             "WELCOME TO IEEE SSIT",
-            "CROPIN TECHNOLOGIES",
+            "CROPIN TECHNOLOGIES AND RISKCOVRY",
             "PRESENTS",
             "HACK4CAUSE 4.0",
             "MACHINE LEARNING",
