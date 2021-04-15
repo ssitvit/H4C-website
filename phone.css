@@ -1,0 +1,99 @@
+.cardperks:not(:first-child) {
+    /* margin-left: -50px; */
+}
+/* for perks  */
+@media only screen and (max-width: 387px) {
+    .cardperks:nth-child(1) {
+        height: 45vh;
+    }
+    .resperk{
+        height: 45vh;
+    }
+}
+@media only screen and (max-width: 352px) {
+    .cardperks:nth-child(1) {
+        height: 55vh;
+    }
+    .cardperks:nth-child(3) {
+        height: 52vh;
+    }
+   
+}
+@media only screen and (max-width: 300px) {
+    .cardperks:nth-child(1) {
+        height: 63vh;
+    }
+    
+   
+}
+
+/* for tracks */
+@media only screen and (max-width: 500px) {
+    .trackContent h2 {
+        visibility: hidden;
+    }
+   
+}
+@media only screen and (max-width: 380px) {
+    .trackContainer .trackCard .trackContent h3 {
+        font-size: 2rem;
+        padding: -1px 40px;
+    }
+    .trackContainer .trackCard .trackContent{
+        height: 33vh;
+        width: 50vh;
+        padding: 0%;
+    }
+   .trackContent p{
+       width: 95%;
+   }
+      
+}
+
+/* for sponsors */
+@media only screen and (max-width: 412px) {
+    div.sponsor.expimg4 {
+        margin-left: 11vh;
+        
+        
+    }
+}
+@media only screen and (max-width: 320px) {
+    div.sponsor.expimg4 {
+        margin-left: 8vh;
+        
+    }
+}
+@media only screen and (max-width: 280px) {
+    div.sponsor.expimg4 {
+        margin-left: 4vh;
+        
+    }
+}
+
+/* for footer  */
+
+@media only screen and (max-width: 560px) {
+    .footerLogo {
+       position: relative;
+       left: -17vh;
+       top: -6vh;
+        
+    }
+}
+@media only screen and (max-width: 460px) {
+    .footerLogo {
+       position: relative;
+       left: -14vh;
+       top: -6vh;
+        
+    }
+}
+@media only screen and (max-width: 370px) {
+    .footerLogo {
+       position: relative;
+       left: -11vh;
+       top: -6vh;
+        
+    }
+}

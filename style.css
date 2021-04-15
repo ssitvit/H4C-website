@@ -520,6 +520,8 @@ div.card-body {
     font-size: 1.5rem !important;
     margin-left: 4%;
     margin: auto;
+    margin-top: -47px;
+    text-align: center;
 }
 
 .perkCard i {
@@ -882,11 +884,11 @@ small {
     background: #30374246;
     color: #fff;
     border-radius: 18px;
-    transition: 0.3s linear;
+    transition: 0.4s linear;
 }
 
 .grid-item:hover {
-    box-shadow: inset -0px -20px 50px rgba(236, 31, 87, 0.4);
+    box-shadow: inset -0px -20px 20px #ec1f5662;
 }
 
 .grid-item:hover .grid-item-inner {
@@ -899,6 +901,7 @@ small {
     margin-top: 1rem;
     padding: 0.6rem 1.8rem;
     background-color: #ec1f57;
+   
     border: none;
     border-radius: 25px;
     color: #fff;
@@ -942,11 +945,7 @@ small {
     color: rgba(0, 0, 0, 0.2);
 }
 
-@media only screen and (max-width: 572px) {
-    .section {
-        /* visibility: hidden; */
-    }
-}
+
 /* new about us ends  */
 
 /* /* new perks  * */
@@ -965,7 +964,7 @@ small {
 
 .cardperks {
     display: flex;
-    height: 280px;
+    height: 284px;
     width: 420px;
     margin: 42px 25px;
     background-color: #1c1c1c;
@@ -975,9 +974,13 @@ small {
     transition: 0.4s ease-out;
     position: relative;
     /* left: 0px; */
+    
     align-items: center;
     justify-content: space-evenly;
     /* animation: animate1 2s linear infinite; */
+}
+.cardperks h4{
+    text-align: center;
 }
 
 .cardperks:not(:first-child) {
@@ -998,17 +1001,20 @@ small {
 .title {
     color: white;
     font-weight: 300;
-    position: absolute;
-    left: 20px;
+    position: absolute; 
+    text-align: center;
     top: 15px;
+    
 }
 
 .bar {
     position: absolute;
-    top: 100px;
-    left: 20px;
+    top: 77px;
+    /* left: 15px; */
     height: 5px;
-    width: 150px;
+    width: 95%;
+    align-items: center;
+    padding-left: 0px;
 }
 
 .emptybar {
@@ -1024,18 +1030,19 @@ small {
     width: 0px;
     height: 100%;
     background: #02f9e9;
-    background: linear-gradient(90deg, #02f9e881, 0%, #ec1f57 65%, #02f9e9 100%);
+    background: linear-gradient(90deg, #ec1f57 0%, #ec1f57 65%, #02f9e9 100%);
     transition: 0.6s ease-out;
 }
 
 .cardperks:hover .filledbar {
-    width: 120px;
+    width: 100%;
     transition: 0.4s ease-out;
 }
 
 .circle {
     position: absolute;
     top: 150px;
+    
     margin: 0 0.5em;
     color: #989c9e;
     /* left: calc(50% - 60px); */
@@ -1400,6 +1407,7 @@ svg {
     color: var(--white);
     text-align: center;
     font-weight: 400;
+    text-align: center;
 }
 
 .title-sponsor {
@@ -1539,6 +1547,11 @@ svg {
     height: 0%;
     width: auto;
 }
+.codingBlocks{
+    margin-top: 28px;
+}
+
+
 /*! Brochure */
 #call-to-action {
     overflow: hidden;
@@ -1738,6 +1751,7 @@ ul .countdown {
     letter-spacing: 2px;
     margin: 0.5em;
     color: white;
+    text-align: center;
 }
 
 /* !Faculty Organizers */
