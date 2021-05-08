@@ -8,14 +8,15 @@ hamburger_menu.addEventListener("click", () => {
 window.onload = function () {
     console.log("loaded");
     var typed = new Typed("#typed", {
-        strings: [
+        strings: ["",
             "WELCOME TO IEEE SSIT",
-            "CROPIN TECHNOLOGIES AND RISKCOVRY",
+            "RISKCOVRY",
             "PRESENTS",
             "HACK4CAUSE 4.0",
-            "MACHINE LEARNING",
+            "Block Chain",
             "ARTICIAL INTELLIGENCE",
             "WEBDEV",
+            "Internet of things",
         ],
         backSpeed: 15,
         smartBackspace: true,
@@ -28,7 +29,7 @@ window.onload = function () {
 
 // timer
 
-var deadline = new Date("Apr 30 , 2021 21:00:00").getTime();
+var deadline = new Date("May 30 , 2021 21:00:00").getTime();
 var x = setInterval(function () {
     var now = new Date().getTime();
     var t = deadline - now;
